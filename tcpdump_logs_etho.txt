@@ -1,0 +1,32 @@
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+09:11:42.123456 IP 192.168.1.100.52344 > example.com.http: Flags [S], seq 123456789, win 29200, options [mss 1460,sackOK,TS val 123456 ecr 0,nop,wscale 7], length 0
+09:11:42.123789 IP example.com.http > 192.168.1.100.52344: Flags [S.], seq 987654321, ack 123456790, win 28960, options [mss 1460,sackOK,TS val 654321 ecr 123456,nop,wscale 7], length 0
+09:11:42.124012 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 1, win 229, options [nop,nop,TS val 123457 ecr 654321], length 0
+09:11:42.124456 IP 192.168.1.100.52344 > example.com.http: Flags [P.], seq 1:85, ack 1, win 229, options [nop,nop,TS val 123458 ecr 654321], length 84: HTTP: GET / HTTP/1.1
+09:11:42.124789 IP example.com.http > 192.168.1.100.52344: Flags [.], ack 85, win 227, options [nop,nop,TS val 654322 ecr 123458], length 0
+09:11:42.125456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 1:511, ack 85, win 227, options [nop,nop,TS val 654323 ecr 123458], length 510: HTTP: HTTP/1.1 200 OK
+09:11:42.125789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 511, win 234, options [nop,nop,TS val 123459 ecr 654323], length 0
+09:11:42.126456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 511:1021, ack 85, win 227, options [nop,nop,TS val 654324 ecr 123459], length 510: HTTP
+09:11:42.126789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 1021, win 234, options [nop,nop,TS val 123460 ecr 654324], length 0
+09:11:42.127456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 1021:1531, ack 85, win 227, options [nop,nop,TS val 654325 ecr 123460], length 510: HTTP
+09:11:42.127789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 1531, win 234, options [nop,nop,TS val 123461 ecr 654325], length 0
+09:11:42.128456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 1531:2041, ack 85, win 227, options [nop,nop,TS val 654326 ecr 123461], length 510: HTTP
+09:11:42.128789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 2041, win 234, options [nop,nop,TS val 123462 ecr 654326], length 0
+09:11:42.129456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 2041:2551, ack 85, win 227, options [nop,nop,TS val 654327 ecr 123462], length 510: HTTP
+09:11:42.129789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 2551, win 234, options [nop,nop,TS val 123463 ecr 654327], length 0
+09:11:42.130456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 2551:3061, ack 85, win 227, options [nop,nop,TS val 654328 ecr 123463], length 510: HTTP
+09:11:42.130789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 3061, win 234, options [nop,nop,TS val 123464 ecr 654328], length 0
+09:11:42.131456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 3061:3571, ack 85, win 227, options [nop,nop,TS val 654329 ecr 123464], length 510: HTTP
+09:11:42.131789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 3571, win 234, options [nop,nop,TS val 123465 ecr 654329], length 0
+09:11:42.132456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 3571:4081, ack 85, win 227, options [nop,nop,TS val 654330 ecr 123465], length 510: HTTP
+09:11:42.132789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 4081, win 234, options [nop,nop,TS val 123466 ecr 654330], length 0
+09:11:42.133456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 4081:4591, ack 85, win 227, options [nop,nop,TS val 654331 ecr 123466], length 510: HTTP
+09:11:42.133789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 4591, win 234, options [nop,nop,TS val 123467 ecr 654331], length 0
+09:11:42.134456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 4591:5101, ack 85, win 227, options [nop,nop,TS val 654332 ecr 123467], length 510: HTTP
+09:11:42.134789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 5101, win 234, options [nop,nop,TS val 123468 ecr 654332], length 0
+09:11:42.135456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 5101:5611, ack 85, win 227, options [nop,nop,TS val 654333 ecr 123468], length 510: HTTP
+09:11:42.135789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 5611, win 234, options [nop,nop,TS val 123469 ecr 654333], length 0
+09:11:42.136456 IP example.com.http > 192.168.1.100.52344: Flags [P.], seq 5611:6121, ack 85, win 227, options [nop,nop,TS val 654334 ecr 123469], length 510: HTTP
+09:11:42.136789 IP 192.168.1.100.52344 > example.com.http: Flags [.], ack 6121, win 234, options [nop,nop,TS val 123470 ecr 654334], length 0
